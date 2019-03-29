@@ -15,7 +15,7 @@
             'jquery-ui/widgets/droppable', 'jquery-ui/widgets/resizable'], factory);
     } else if (typeof exports !== 'undefined') {
         try { jQuery = require('jquery'); } catch (e) {}
-        try { gridstack = require('gridstack'); } catch (e) {}
+        try { GridStackUI = require('gridstack').GridStackUI; } catch (e) {}
         factory(jQuery, gridstack.GridStackUI, exports);
     } else {
         factory(jQuery, GridStackUI, window);
